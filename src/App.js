@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
         super(props);
         this.state = { 
-          inventory: []
+          inventory: ['']
          }
     }
   
@@ -22,9 +22,15 @@ class App extends Component {
       <div className="App">
 
       <Header/>
-      <Dashboard/>
+      <Dashboard
+      inventory = {this.state.inventory}
+      />
       <Form/>
       
+        <div> 
+          {this.state.inventory}
+
+        </div>
       </div>
     );
   }

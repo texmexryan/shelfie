@@ -17,7 +17,7 @@ app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 //.catch(err => console.log(err))
 
 
-// app.get('/api/__', ctrl.getPosts);
+app.get('/api/inventory', ctrl.getInventory);
 // app.put('/api/__/:id', ctrl.updatePost);
 // app.post('/api/___', ctrl.addPost);
 // app.delete('/api/product/:id', ctrl.deletePost);

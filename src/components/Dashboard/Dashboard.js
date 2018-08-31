@@ -16,18 +16,26 @@ class Dashboard extends Component {
 
     }
     render() { 
+        const {inventory} = this.props
+        let inventoryDisplay = inventory.map((e, i) => {
+            
+                
+              
         return ( 
             <div>
-            
-            Dashboard
-            
-            <div>
-            <Product/>
-            </div>
+
+                <div>
+                
+                {inventoryDisplay}
+                <Product/>
+                </div>
 
             </div>
+            
+         )
+     });
 
-        )
+        
     }
 }
  
